@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MASCO Portal – New Equipment Request</title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="request.html">
+        <div class="logo-icon">
+          <img src="img/log.png" alt="MASCO Logo"/>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="request.html">New Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="my-requests.html">My Requests</a></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container my-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="mb-4 text-center">New Equipment Request</h2>
+      <form id="requestForm" novalidate>
+        <div class="row g-3">
+          <div class="col-12">
+            <label for="employeeId" class="form-label">Employee ID</label>
+            <input type="text" id="employeeId" class="form-control" placeholder="Employee ID" readonly/>
+          </div>
+          <div class="col-md-6">
+            <label for="equipment" class="form-label">Equipment Type</label>
+            <select id="equipment" class="form-select" required>
+              <option value="">-- Select --</option>
+              <option>Laptop</option>
+              <option>Monitor</option>
+              <option>Keyboard</option>
+              <option>Mouse</option>
+              <option>Printer</option>
+              <option>Headset</option>
+              <option>Tablet</option>
+              <option>Other</option>
+            </select>
+            <div class="invalid-feedback">Please select an equipment type.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" id="quantity" class="form-control" min="1" placeholder="1" required/>
+            <div class="invalid-feedback">Enter at least 1.</div>
+          </div>
+          <div class="col-12" id="otherEquipmentDiv">
+            <label for="otherEquipment" class="form-label">Please specify</label>
+            <input type="text" id="otherEquipment" class="form-control" placeholder="Describe other equipment"/>
+            <div class="invalid-feedback">Please specify your equipment.</div>
+          </div>
+          <div class="col-12">
+            <label for="justification" class="form-label">Justification</label>
+            <textarea id="justification" class="form-control" rows="4" required></textarea>
+            <div class="invalid-feedback">Please provide justification.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input type="checkbox" id="policyAgree" class="form-check-input" required/>
+              <label for="policyAgree" class="form-check-label">
+                I have read and accept the
+                <a href="It.pdf" target="_blank">Asset Issuance &amp; Acceptable Usage Policy</a>
+              </label>
+              <div class="invalid-feedback">You must accept before submitting.</div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-end">
+          <button type="submit" class="btn btn-primary">Submit Request</button>
+        </div>
+        <div id="formMessage" class="mt-3"></div>
+      </form>
+    </div>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="js/employees.js" defer></script>
+</body>
+</html>

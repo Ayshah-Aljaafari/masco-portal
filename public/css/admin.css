@@ -1,0 +1,84 @@
+.sidebar {
+  width: 220px;
+  background: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  padding: 1rem;
+}
+.sidebar .sidebar-heading {
+  color: #1C3879;
+  font-size: .85rem;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.kpi-card {
+  border-radius: .75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+.kpi-card.bg-primary  { background: #004085 !important; }
+.kpi-card.bg-success  { background: #157347 !important; }
+.kpi-card.bg-warning  { background: #d39e00 !important; }
+.kpi-card.bg-danger   { background: #c82333 !important; }
+.kpi-card h6 { font-size: 1rem; text-transform: uppercase; }
+.kpi-card h2 { font-size: 2.5rem; margin: .25rem 0; }
+.kpi-card .card-body h2 {
+  color: #fff !important;
+}
+.admin-page {
+  padding: 8rem 2rem 2rem;
+}
+.admin-page.container-fluid {
+  max-width: 100% !important;
+}
+.chart-card {
+  border: none;
+  border-radius: .75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  background: #fff;
+  height: auto;
+}
+.chart-card .card-body { padding: 1.25rem; }
+.chart-card canvas {
+  height: 120px !important;
+}
+#actionsTable th {
+  background: #2d4c95;
+  color: #fff;
+  text-align: center;
+}
+#actionsTable td { vertical-align: middle; }
+#actionsTable .btn-sm { font-size: .85rem; }
+.page-card {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.12);
+}
+.page-card .card-header {
+  background: #2d4c95;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem .5rem 0 0;
+}
+.page-card .card-body { padding: 1.5rem; }
+.dataTable thead th {
+  background: #2d4c95 !important;
+  color: #fff;
+  border-bottom: none;
+}
+.table-striped > tbody > tr:nth-of-type(odd) { background: #f3f6fa; }
+.table-hover > tbody > tr:hover { background: #e4eefe; transition: background .15s; }
+.btn-adjust {
+  font-size: .95rem;
+  font-weight: 500;
+  border-radius: .375rem;
+}
+#inventoryTable th:last-child,
+#inventoryTable td:last-child {
+  white-space: nowrap;
+  text-align: center;
+}
+.btn-group .btn {
+  margin: 0 0.1rem;
+}

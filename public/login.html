@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MASCO Portal – Login</title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <main class="login-container">
+    <div class="login-card">
+      <img src="img/log.png" alt="MASCO Logo" class="login-logo"/>
+      <h2>Portal Login</h2>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label class="form-label">Employee ID</label>
+          <input type="text" id="username" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" id="password" class="form-control" required/>
+        </div>
+        <div class="mb-4">
+          <label class="form-label">Role</label>
+          <select id="role" class="form-select" required>
+            <option value="" disabled selected>-- Select Role --</option>
+            <option value="employee">Employee</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Log In</button>
+      </form>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/employees.js" defer></script>
+</body>
+</html>
