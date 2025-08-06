@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
 - **Role-Based Access**: Separate views and permissions for *Employees* and *Admins*.
 - **Session Auth**: Secure, session-based login flow.
@@ -17,14 +17,14 @@
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Node.js** v14+ (LTS recommended)
 - **npm** (bundled with Node.js)
 
 ---
 
-## 🛠 Installation
+##  Installation
 
 1. **Clone the repository**
    ```bash
@@ -38,7 +38,7 @@
 
 ---
 
-## ▶️ Running Locally
+##  Running Locally
 
 Start the server and access the portal:
 
@@ -51,7 +51,7 @@ node server.js
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 / (project root)
@@ -72,7 +72,7 @@ node server.js
 
 ---
 
-## 🧑‍💻 Usage
+##  Usage
 
 ### Employee
 
@@ -88,7 +88,7 @@ node server.js
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues, and feature requests welcome!
 
